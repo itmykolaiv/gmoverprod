@@ -1,5 +1,6 @@
 body{
 	background: url(img/logo/background-image.png);
+	background-attachment: fixed;
 }
 
 .content{
