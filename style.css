@@ -34,7 +34,7 @@ body{
 .main-menu li{
 	font-size: 1.3vw;
 	border: solid 1px #EEEEEE;
-	color: gray;
+	color: #555555;
 	margin-bottom: 3%;
 	display: inline-block;
 	padding: 10px 5%;
@@ -47,13 +47,12 @@ body{
 
 .main-menu li:hover{
 	border: solid 1px gray;
-	background-color: white;
+	background-color: #f2c431;
 	color: black;
 }
 
-.active-li li{
-	border-top: solid 1px black;
-	border-bottom: solid 1px black;
+.active-li li{	
+	background-color: #f2c431;
 }
 
 .cont-menu{
