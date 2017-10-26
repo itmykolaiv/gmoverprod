@@ -53,14 +53,15 @@ body{
 
 .active-li li{	
 	background-color: #f2c431;
+	
 }
 
 .cont-menu{
 	margin-left: 13%;
+	
 }
 
 .cont-menu li{
-	display: inline-block;
 	background-color: white;
 	width: 15%;
 	text-align: center;
@@ -68,7 +69,7 @@ body{
 	background-color: #eee;
 	border: 1px solid #ccc;
 	box-shadow: 0 1px 0 rgba(255,255,255, .9) inset, 0 1px 3px rgba(0,0,0, .1);
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 .cont-menu a{
