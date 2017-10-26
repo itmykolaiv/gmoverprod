@@ -1,0 +1,167 @@
+body{
+	background: url(img/logo/background-image.png);
+	background-attachment: fixed;
+}
+
+.content{
+	background-color: #EEEEEE;
+	width: 70%;
+	margin: 0 auto;
+	padding-bottom: 1%;
+}
+
+.header{
+	height: 20%;
+}
+
+.logo{
+	height: 90%;
+	width: auto;
+	margin: 3%;
+	float: left;
+}
+
+.title{
+	margin: auto;
+	text-align: center;
+	font-size: 3.5vw;
+	margin: 1%;
+	font-family: Copperplate;
+	color: black;
+	text-decoration: none;
+}
+
+.main-menu li{
+	font-size: 1.3vw;
+	border: solid 1px #EEEEEE;
+	color: #555555;
+	margin-bottom: 3%;
+	display: inline-block;
+	padding: 10px 5%;
+}
+
+.main-menu a{
+	text-decoration: none;
+	margin: auto 7.5%;
+}
+
+.main-menu li:hover{
+	border: solid 1px gray;
+	background-color: #f2c431;
+	color: black;
+}
+
+.active-li li{	
+	background-color: #f2c431;
+}
+
+.cont-menu{
+	margin-left: 13%;
+}
+
+.cont-menu li{
+	display: inline-block;
+	background-color: white;
+	width: 15%;
+	text-align: center;
+	padding: 1% 0;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	box-shadow: 0 1px 0 rgba(255,255,255, .9) inset, 0 1px 3px rgba(0,0,0, .1);
+	border-radius: 5px;
+}
+
+.cont-menu a{
+	color: black;
+	text-decoration: none;
+}
+
+.cont-menu li:hover{
+	background-color: #D8D8D8;
+	box-shadow: 0 1px 3px rgba(150,150,150, .9) inset, 0 1px 3px rgba(0,0,0, .1);
+}
+
+.window-img{
+	width: 75%;
+	margin: 1% 12.5% 5% 12.5%;
+}
+
+.lang-menu{
+	width: 70%;
+	margin:auto;
+}
+
+.lang-cell{
+	width: 40%;
+	padding: 2% 4.5%;
+	margin: auto;
+	display: inline-block;
+}
+
+.page-name{
+	font-size: 2.5vw;
+}
+
+.img-table{
+	padding: 0 5%;
+}
+
+.gallery-img{
+	width: 30%;
+	margin: 1.5%;
+	-webkit-filter: grayscale(60%);
+}
+
+.gallery-img:hover{
+-webkit-filter: grayscale(0%);
+}
+
+.transition{
+	transition-duration: 0.7s;
+}
+
+.info-text{
+	text-align: justify;
+	margin: 0 8%;
+}
+
+.info-text span{
+	margin: 7%;
+}
+
+.info-text > div{
+	padding: 2% 6%;
+	border: solid 1px black;
+	background-color: white;
+}
+
+.cont-img{
+	width: 50%;
+	margin: 1% 25% 5%;
+}
+
+.button{
+	background-color: white;
+	margin: 0 25%;
+	width: 50%;
+	text-align: center;
+	padding: 1% 0;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	box-shadow: 0 1px 0 rgba(255,255,255, .9) inset, 0 1px 3px rgba(0,0,0, .1);
+	border-radius: 5px;
+}
+
+#cont-name{
+	width: 50%;
+	margin: 0 25%;
+	text-align: center;
+	font-size: 3vw;
+	font-style: italic;
+}
+
+#year-label{
+	margin: 10px auto;
+	text-align: center;
+	font-size: 20px;
+}
