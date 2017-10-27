@@ -58,13 +58,12 @@ body{
 
 .cont-menu{
 	margin-left: 13%;
-	
 }
 
 .cont-menu li{
 	background-color: white;
-	width: 15%;
-	text-align: center;
+	width: 75%;
+	text-align: left;
 	padding: 1% 0;
 	background-color: #eee;
 	border: 1px solid #ccc;
