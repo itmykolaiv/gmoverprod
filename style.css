@@ -57,7 +57,13 @@ body{
 }
 
 .cont-menu{
-	margin-left: 13%;
+	margin-left: 13%;	
+}
+
+.cont-menu li{
+	width: 60%;
+	text-align: top;
+	padding: 1%;
 }
 
 .cont-menu li{
@@ -140,18 +146,6 @@ body{
 	margin: 1% 25% 5%;
 }
 
-.button{
-	background-color: white;
-	margin: 0 25%;
-	width: 50%;
-	text-align: center;
-	padding: 1% 0;
-	background-color: #eee;
-	border: 1px solid #ccc;
-	box-shadow: 0 1px 0 rgba(255,255,255, .9) inset, 0 1px 3px rgba(0,0,0, .1);
-	border-radius: 5px;
-}
-
 #cont-name{
 	width: 50%;
 	margin: 0 25%;
@@ -165,3 +159,36 @@ body{
 	text-align: center;
 	font-size: 20px;
 }
+<<<<<<< HEAD
+=======
+
+div#extra-menu {
+    padding: 0 150px;
+}
+
+div#extra-menu:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+div#extra-menu .teaser-image {
+    float: left;
+    padding-right: 20px;
+	padding-top: 10px;
+	border-radius: 100%;
+}
+
+div#extra-menu .teaser-description {
+    float: left;
+	font-size: 20;
+	padding-top: 10px;
+}
+
+.button{
+	background-color: #f2c431;
+    color: #2c3e50;
+    text-decoration: none;
+    cursor: pointer;
+}
+>>>>>>> 7c05e63747b94dc381fc6ef39e9ac6cb645dd953
