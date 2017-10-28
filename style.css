@@ -57,14 +57,20 @@ body{
 }
 
 .cont-menu{
-	margin-left: 13%;
-	border-radius: 10px;	
+	margin-left: 13%;	
 }
 
 .cont-menu li{
 	width: 60%;
 	text-align: top;
 	padding: 1%;
+}
+
+.cont-menu li{
+	background-color: white;
+	width: 75%;
+	text-align: left;
+	padding: 1% 0;
 	background-color: #eee;
 	border: 1px solid #ccc;
 	box-shadow: 0 1px 0 rgba(255,255,255, .9) inset, 0 1px 3px rgba(0,0,0, .1);
