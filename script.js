@@ -1,4 +1,4 @@
-function hideInfo(){
+unction hideInfo(){
   document.getElementById('eurasia').style.display = "none"
   document.getElementById('africa').style.display = "none"
   document.getElementById('northAmerica').style.display = "none"
@@ -23,3 +23,13 @@ if (info.style.display == "none"){
   info.style.display = "block";
 };
 }
+
+
+
+
+
+
+var el = document.getElementById('subscribe')
+el.addEventListener('click', function() {
+ prompt("what is your email");
+ };
