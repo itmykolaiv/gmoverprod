@@ -183,8 +183,15 @@ div#extra-menu .teaser-description {
 	padding-top: 10px;
 }
 
-.button{
+.button {
     color: #2c3e50;
     text-decoration: none;
     cursor: pointer;
+}
+
+#roundImg {
+	border-radius: 20px;
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
 }
