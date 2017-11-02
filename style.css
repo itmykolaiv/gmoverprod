@@ -8,7 +8,7 @@ body{
 	width: 70%;
 	margin: 0 auto;
 	padding-bottom: 1%;
-	opacity: 0.965;
+    opacity: 0.97;
 }
 
 .header{
@@ -198,6 +198,6 @@ div#extra-menu .teaser-description {
 }
 .itembody{
 	background: url('img/other/bg.jpg');
-	background-size: 100%;
+	background-size: 120%;
 	background-attachment: fixed;
 }
