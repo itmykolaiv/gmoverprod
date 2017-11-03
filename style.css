@@ -229,8 +229,8 @@ div#extra-menu .teaser-description {
 	transition: all 500ms ease;    
 }
 
-a.subscribe {
-    overflow: visible;
+button.subscribe {
+    overflow: hidden;
 }
 
 .subscribe:before {
@@ -238,12 +238,11 @@ a.subscribe {
     content: "\";
     position: absolute;
     top: 12px;
-    left: -30px;
-    transition: all 200ms ease;
+    left: -20px;
+    transition: all 150ms ease;
     overflow: hidden;
 }
 
 .subscribe:hover:before {
     left: 15px;
-    overflow: hidden;
 }
