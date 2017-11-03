@@ -195,13 +195,16 @@ div#extra-menu .teaser-description {
     color: #4a4a4a;
     text-decoration: none;
     cursor: pointer;
-    transition: 0.25s
+    transition: 0.25s;
+    padding: 0 5px;
+    margin: 0 0 0 250px;
 
 }
 .button:hover{
-    box-shadow: inset 102px 0px black;
+    box-shadow: inset 115px 0px black;
     color: #eee;
     transition: 0.25s;
+    border-radius: 8px;
 }
 
 #roundImg {
@@ -217,7 +220,7 @@ div#extra-menu .teaser-description {
 }
 
 .subscribe {
-    margin: auto 10%;
+    left: 39.5%;
     border: solid 2px #555555;
 	background: #f2c431;
 	color: #555555;
