@@ -17,6 +17,16 @@ function send_request(command, query) {
     });
 }
 
+function build_items () {
+  var cont = document.querySelector('.js_items-container');
+  //Fill our container
+}
+
+function creator_item () {
+  var div = document.createElement('div');
+  //add another attributes to div var.
+}
+
 
 
 function showSubscribeAlert() {
