@@ -218,6 +218,12 @@ div#extra-menu .teaser-description {
 	background-size: 120%;
 	background-attachment: fixed;
 }
+ 
+
+@font-face{
+    font-family: FontAwesome;
+    src: url('fonts/fonts/fontawesome-webfont.ttf')
+}
 
 .subscribe {
     left: 39.5%;
