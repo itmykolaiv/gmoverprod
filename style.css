@@ -151,6 +151,7 @@ body{
 .cont-img{
 	width: 50%;
 	margin: 1% 25% 5%;
+    border: solid 2px 
 }
 
 #cont-name{
@@ -191,13 +192,16 @@ div#extra-menu .teaser-description {
 }
 
 .button {
-    color: #2c3e50;
+    color: #4a4a4a;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.25s
+
 }
 .button:hover{
-    box-shadow: inset 102px 0px #f2c431;
-    transition: 0.5s
+    box-shadow: inset 102px 0px black;
+    color: #eee;
+    transition: 0.25s;
 }
 
 #roundImg {
@@ -210,4 +214,36 @@ div#extra-menu .teaser-description {
 	background: url('img/other/bg.jpg');
 	background-size: 120%;
 	background-attachment: fixed;
+}
+
+.subscribe {
+    margin: auto 10%;
+    border: solid 2px #555555;
+	background: #f2c431;
+	color: #555555;
+	padding: 10px 5%;
+	font-size: 18px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease;    
+}
+
+a.subscribe {
+    overflow: visible;
+}
+
+.subscribe:before {
+    font-family: FontAwesome;
+    content: "\";
+    position: absolute;
+    top: 12px;
+    left: -30px;
+    transition: all 200ms ease;
+    overflow: hidden;
+}
+
+.subscribe:hover:before {
+    left: 15px;
+    overflow: hidden;
 }
