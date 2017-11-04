@@ -173,7 +173,7 @@ body{
 }
 
 div.extra-menu {
-    padding: 0 150px;
+	padding: 0 150px 30px 150px;
 }
 
 
@@ -183,12 +183,19 @@ div.extra-menu .teaser-image {
     padding-right: 20px;
 	padding-top: 10px;
 	border-radius: 100%;
+	width: 20%;
 }
 
 div.extra-menu .teaser-description {
     float: left;
 	font-size: 20;
 	padding-top: 10px;
+	width: 75%;
+}
+
+.extra-menu .one-news {
+	border-bottom: 1px dashed #ccc;
+	padding: 10px 0;
 }
 
 .button {
