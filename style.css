@@ -2,7 +2,11 @@ body{
 	background: url(img/logo/background-image.png);
 	background-attachment: fixed;
 }
-
+.clear::after {
+	content: '';
+	clear: both;
+	display: table;
+}
 .content{
 	background-color: #EEEEEE;
 	width: 70%;
@@ -168,24 +172,20 @@ body{
 	font-size: 20px;
 }
 
-div#extra-menu {
+div.extra-menu {
     padding: 0 150px;
 }
 
-div#extra-menu:after {
-    content: '';
-    clear: both;
-    display: table;
-}
 
-div#extra-menu .teaser-image {
+
+div.extra-menu .teaser-image {
     float: left;
     padding-right: 20px;
 	padding-top: 10px;
 	border-radius: 100%;
 }
 
-div#extra-menu .teaser-description {
+div.extra-menu .teaser-description {
     float: left;
 	font-size: 20;
 	padding-top: 10px;
@@ -226,7 +226,7 @@ div#extra-menu .teaser-description {
 }
 
 .subscribe {
-    left: 39.5%;
+    left: 40%;
     border: solid 2px #555555;
 	background: #f2c431;
 	color: #555555;
