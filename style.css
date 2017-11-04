@@ -173,24 +173,22 @@ body{
 }
 
 div.extra-menu {
-	padding: 0 150px 30px 150px;
+	padding: 0 50px 30px 50px;
 }
-
-
 
 div.extra-menu .teaser-image {
     float: left;
     padding-right: 20px;
 	padding-top: 10px;
 	border-radius: 100%;
-	width: 20%;
+	width: 15%;
 }
 
 div.extra-menu .teaser-description {
     float: left;
 	font-size: 20;
 	padding-top: 10px;
-	width: 75%;
+	width: 80%;
 }
 
 .extra-menu .one-news {
