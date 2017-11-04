@@ -7,14 +7,23 @@ function showNewsAlert() {
 	if (name_news == "") {
 		return showNewsAlert();
 	}
+    if (name_news == null) {
+        return
+    }
 	var content = prompt("What is your news about: ");
 	if (content == "") {
 		return showNewsAlert();
 	}
+   if (content == null) {
+       return
+    }
 	var time = prompt("When did it happen: ");
 	if (time == "") {
 		return showNewsAlert();
 	}
+    if (time == null) {
+        return
+    }    
 	alert(name_news + "\n" + content + "\n" + time);
 }
 
