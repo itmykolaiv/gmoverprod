@@ -244,7 +244,7 @@ button.subscribe {
 
 .subscribe:before {
     font-family: FontAwesome;
-    content: "\";
+    content: "\f0e0";
     position: absolute;
     top: 12px;
     left: -20px;
@@ -253,5 +253,36 @@ button.subscribe {
 }
 
 .subscribe:hover:before {
+    left: 15px;
+}
+
+.offer {
+    left: 40%;
+    border: solid 2px #555555;
+	background: #f2c431;
+	color: #555555;
+	padding: 10px 5%;
+	font-size: 18px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease;    
+}
+
+button.offer {
+    overflow: hidden;
+}
+
+.offer:before {
+    font-family: FontAwesome;
+    content: "\f0fe";
+    position: absolute;
+    top: 12px;
+    left: -20px;
+    transition: all 150ms ease;
+    overflow: hidden;
+}
+
+.offer:hover:before {
     left: 15px;
 }
