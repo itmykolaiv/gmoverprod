@@ -10,7 +10,7 @@ function showNewsAlert() {
     if (name_news == null) {
         return
     }
-	var content = prompt("What is your news about: ");
+	var content = prompt("What are your news about: ");
 	if (content == "") {
 		return showNewsAlert();
 	}
@@ -42,7 +42,7 @@ function send_request(command, query, cb) {
       });
 }
 
-function build_items (news_wrapper, command, query) {
+function build_items(news_wrapper, command, query) {
   news_wrapper.innerHTML = '';
   send_request(command, query, function(data) {
     for(var i = 0; i < data.results.length; i++) {
