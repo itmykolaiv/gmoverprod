@@ -1,5 +1,8 @@
 function showSubscribeAlert() {
-  prompt("What is your email: ");
+    var check = prompt("What is your email: ");
+    for (i=0; i < check.length; i++){
+        check[i] == "@"
+    } 
 }
 
 function showNewsAlert() {
