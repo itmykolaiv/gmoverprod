@@ -1,8 +1,18 @@
 function showSubscribeAlert() {
-    var check = prompt("What is your email: ");
-    for (i=0; i < check.length; i++){
-        check[i] == "@"
-    } 
+    var sign = prompt("What is your email: ");
+    var check = 'No'
+    for (i=0; i < sign.length; i++){
+        if (sign[i] == "@"){
+            check = 'Yes'
+        }
+    }
+    if (check == "No"){
+        alert("Enter your email correctly")
+        showSubscribeAlert()
+    }
+    if (check == "Yes"){
+        alert("Congratulate! You have subscribed :)")
+    }
 }
 
 function showNewsAlert() {
