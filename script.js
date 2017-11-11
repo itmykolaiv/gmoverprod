@@ -54,17 +54,23 @@ function send_request(command, query, cb) {
       });
       */
 }
-//https://www.giantbomb.com/api/games/?api_key=db13960f716ed8847edfaa64dad63ac7d63f7e1a&format=json&limit=10&sort=original_release_date:desc
 
 function build_items(game, offset) {
     //search query=name_game
-    var query = '';
+    var query = '&limit=20&sort=number_of_user_reviews:desc&field_list=name,id,deck,image';
+    var add_q = '';
+    var command = 'games';
+    if (game) {
+        query = '&field_list=name,id,deck,image&resources=game&query='+encodeURIComponent(game)+'&limit=20';
+        command = 'search';
+    }
     if (offset) {
-        query = '&offset=' + offset; 
+        add_q = game ? '&page=' + (offset/20) : '&offset=' + offset; 
     }
     var news_wrapper = document.querySelector('.js_news-wrapper');
     news_wrapper.innerHTML = '';
-    send_request('games', '&limit=20&sort=number_of_user_reviews:desc&field_list=name,id,deck,image' + query, function(data) {
+    document.querySelector('.js_pagenator').innerHTML = '';
+    send_request(command, query + add_q, function(data) {
         for(var i = 0; i < data.results.length; i++) {
         var img = document.createElement('img');
         img.src = data.results[i].image.small_url;
@@ -96,14 +102,11 @@ function build_items(game, offset) {
         div_one.append(div_img);
         div_one.append(div_descr);
         news_wrapper.append(div_one);
-        build_pagenator(data.number_of_total_results, offset);
+        if (data.number_of_total_results > 20) {
+            build_pagenator(data.number_of_total_results, offset);
+        }
         }
     });
-}
-
-function creator_item() {
-  var div = document.createElement('div');
-  //add another attributes to div var.
 }
 
 function build_pagenator(total, pageNum) {

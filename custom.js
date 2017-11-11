@@ -7,5 +7,14 @@ document.addEventListener("DOMContentLoaded", function() {
   if (news_div) {
     display_article();
   }
-  var news_wrapper = document.querySelector('.js_item-container');
+  var search_button = document.querySelector('#search button');
+  search_button.addEventListener('click', function() {
+    var game_name = document.querySelector('#search input').value;
+    if (game_name) {
+      build_items(game_name);
+    }
+    else {
+      alert('Please, enter name of game!');
+    }
+  })
 });
