@@ -300,3 +300,8 @@ button.offer {
 .offer:hover:before {
     left: 15px;
 }
+
+#search {
+    display: inline;
+    margin: 0 30%;
+}

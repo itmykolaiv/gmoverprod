@@ -53,7 +53,6 @@ function send_request(command, query, cb) {
           
       });
 }
-//https://www.giantbomb.com/api/games/?api_key=db13960f716ed8847edfaa64dad63ac7d63f7e1a&format=json&limit=10&sort=original_release_date:desc
 
 function build_items(news_wrapper, command, query) {
   news_wrapper.innerHTML = '';
