@@ -158,14 +158,6 @@ body{
     border: solid 2px 
 }
 
-#cont-name{
-	width: 50%;
-	margin: 0 25%;
-	text-align: center;
-	font-size: 3vw;
-	font-style: italic;
-}
-
 #year-label{
 	margin: 10px auto;
 	text-align: center;
@@ -185,8 +177,8 @@ div.extra-menu .teaser-image {
 }
 
 div.extra-menu .teaser-description {
-    float: left;
-	font-size: 20;
+    left: 10px;
+    font-size: 20;
 	padding-top: 10px;
     padding-left: 20px;
 	width: 80%;
@@ -306,9 +298,18 @@ button.offer {
 	text-align: center;
 	padding: 10px;
 }
+
 .list-pagenator button.active {
-	background: green;
+	background: #f2c431;
 }
+
 #search {
     text-align: center;
+}
+
+#teaser {
+    text-align: left;
+    left: 0;
+    margin: 0;
+    padding: 0;
 }

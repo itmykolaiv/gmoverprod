@@ -1,16 +1,16 @@
 function showSubscribeAlert() {
     var sign = prompt("What is your email: ");
-    var check = 'No'
+    var check = false
     for (i=0; i < sign.length; i++){
         if (sign[i] == "@"){
-            check = 'Yes'
+            check = true
         }
     }
-    if (check == "No"){
+    if (check == false){
         alert("Enter your email correctly")
         showSubscribeAlert()
     }
-    if (check == "Yes"){
+    if (check == true){
         alert("Congratulations! You have subscribed :)")
     }
 }
@@ -85,8 +85,8 @@ function build_items(game, offset) {
         
         var b_descr = document.createElement('b');
         b_descr.innerHTML = data.results[i].name;
+        b_descr.setAttribute("id", "teaser");
         var p_descr = document.createElement('p');
-        
         p_descr.innerHTML = data.results[i].deck && data.results[i].deck.length > 160 ? data.results[i].deck.substr(0, 155) + '...' : data.results[i].deck;
         var a_read = document.createElement('a');
         a_read.href = 'item.html?id=' + data.results[i].id;
@@ -175,6 +175,7 @@ function build_pagenator(total, pageNum) {
         }
     }
 }
+
 function display_article() {
     var url_string = window.location.href;
     var url = new URL(url_string);
@@ -188,7 +189,6 @@ function display_article() {
       img.height = "290"; 
       img.className = "newsImg"
       var div_img = document.createElement('div');
-//      div_img.className = "newsImg";
       div_img.append(img);
 
       var b_descr = document.createElement('b');
